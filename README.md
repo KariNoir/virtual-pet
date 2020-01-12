@@ -29,3 +29,5 @@ Max Play 10;
 Every 20 seconds all instances decrease by 1; 
 If Sleep is 0 then dead;
 If Eat is 0 for 20 seconds then dead;
+
+No Methods should be higher than 10 or lower than 0;
