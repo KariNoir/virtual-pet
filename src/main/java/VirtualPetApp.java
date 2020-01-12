@@ -21,12 +21,15 @@ public class VirtualPetApp {
 		if(hunger <=6) {
 			return "I need food!";
 		}
+		
 		// Virtual Pet 
 		return null;
 
 	}
 		
 		public void eating() {
+			sleep += 2;
+			pot -= 4;
 			
 			hunger -= 5; //decrease hunger by 2
 			if(hunger <0) { //if less than zero then it will be zero
@@ -41,6 +44,8 @@ public class VirtualPetApp {
 		
 		
 		public void relief() {
+			play += 2;
+			hunger -= 2;
 			pot = 0;
 			if(pot <0) {
 				pot = 0;
@@ -72,10 +77,33 @@ public class VirtualPetApp {
 		}
 			
 		
-		public void time() {
+		public void tick() {
+			hunger--;
 			
+			if(hunger <0) { //if less than zero then it will be zero
+				hunger = 0;
+			}
+			if(hunger > 10) {
+				hunger = 10;	
+	
+				
+				System.out.println ("What do you want to do?");
+				System.out.println("Fed is 1, Play is 2, Sleep is 3, Go to the bathroom 4");
+				Object input;
+				int task = ((int) input).nextInt();
+
+				while (task != 0) {
+					System.out.println("Pick between 1 and 5 ");
+					int duty = (int) .nextInt();
+				}
+
+				System.out.println("You guessed it...great job");
+
+			}
 		}
 		}
+		
+		
 
 
 
