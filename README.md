@@ -21,3 +21,5 @@ Max sleep 10
 Max Eat 10
 Max Potty 10
 Max Play 10
+
+Every 20 seconds all instances decrease by 1 
