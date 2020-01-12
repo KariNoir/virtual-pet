@@ -1,7 +1,7 @@
 # virtual-pet
 
 
-I want my pet to eat, potty, sleep, and play;
+I want my pet to eat, potty, sleep, and play; these are the strings
 
 Play reduces sleep and eat and drink;
 
