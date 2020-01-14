@@ -97,7 +97,7 @@ public class VirtualPetApp {
 					int duty = (int) .nextInt();
 				}
 
-				System.out.println("You guessed it...great job");
+				System.out.println("...great job");
 
 			}
 		}
