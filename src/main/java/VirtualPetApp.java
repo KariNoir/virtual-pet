@@ -2,122 +2,82 @@ import java.util.Scanner;
 
 public class VirtualPetApp {
 	
-//public String getStatus() {
-//		if(play <= 6) {
-//			return "Let's play! ";
-//		}
-//		if(pot >=6) {
-//			return "I got to go! ";
-//		}
-//		if(sleep >=6) {
-//			return "Need Sleep! ";
-//
-//		}
-//		if(hunger <=6) {
-//			return "I need food!";
-//		}
-//		
-//		// Virtual Pet 
-//		return null;
-//
-//	}
+
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
 		VirtualPet techPet = new VirtualPet(10, 10, 10, 10);
 
-//		public void eating() {
-//			sleep += 2;
-//			pot -= 4;
-//			
-//			hunger -= 5; //decrease hunger by 2
-//			if(hunger <0) { //if less than zero then it will be zero
-//				hunger = 0;
-//			}
-//			if(hunger > 10) {
-//				hunger = 10;
-			
-//	String decision = "";
-//	while (!decision.equalsIgnoreCase ("Yes")) {
-//		
 
 		System.out.println("Hi, name your pet");
 		Scanner petName = new Scanner(System.in);
-		petName = petName.nextLine();
-		System.out.println("petName " + techPet.forEat());
-		System.out.println("petName " + techPet.forFun());
-		System.out.println("petName " + techPet.forPotty());
-		System.out.println("petName " + techPet.forSleep());
+		String yourpet = petName.next();
+		
+		System.out.println(yourpet +"'s tummy meter is on " + techPet.forEat());
+		System.out.println(yourpet +"'s fun meter is on " + techPet.forFun());
+		System.out.println(yourpet +"'s bladder meter is on " + techPet.forPotty());
+		System.out.println(yourpet +"'s rest meter is on " + techPet.forSleep());}
+
+
+		
+		String whattoDo = "";{
+		
+		System.out.println("What do you want to do with your pet?");
+		System.out.println("1. Feed");
+		System.out.println("2. Play");
+		System.out.println("3. Sleep");
+		System.out.println("4. Potty");
+		
+		int eat = 1;
+		int sleep = 1;
+		int potty = 1;
+		int fun = 1;
 		
 		
+		Scanner petName = new Scanner(System.in); //why can't it read these instructions from above?
+		String yourpet = petName.next();
+		VirtualPet techPet = new VirtualPet(10, 10, 10, 10);
+		String whattoDo = "";
+
 		
+		if (whattoDo.contentEquals("1")) {
+			techPet.fedPet();
+			System.out.println("Fed" + yourpet + eat + "cookie.");
 		
-	}
+		 } else if (whattoDo.contentEquals("2")) {
+			techPet.getSleep();
+			System.out.println(yourpet + "took a nap");
 			
+		} else if (whattoDo.contentEquals("3")) {
+			techPet.goPotty();
+			System.out.println(yourpet + "is relieved.");
 		
+		} else if (whattoDo.contentEquals("4")) {
+			techPet.haveFun();
+			System.out.println(yourpet + "is smiling.");
+			
+
+		 while (whattoDo >=5) {
+			System.out.println("Pick a number 1-4 ");
+
+		 }
 		}
-		
-		
-		public void relief() {
-			play += 2;
-			hunger -= 2;
-			pot = 0;
-			if(pot <0) {
-				pot = 0;
-			}
-			if(pot >10) {
-				pot = 10;
-			}
-			hunger -= 2; //decrease hunger by 2
-			if(hunger > 10) {
-				hunger = 10;
-			}
-			
+
+		}
 }
-
-		public void rest() {
-			pot -= 2;
-			hunger += 2;
-			
-		if(sleep <0) {
-			sleep = 0;
-		}
-		}
-
-		public void fun() {
-			sleep -=3;
-			hunger -=2;
-			
-			
-		}
-			
 		
-		public void tick() {
-			hunger--;
-			
-			if(hunger <0) { //if less than zero then it will be zero
-				hunger = 0;
-			}
-			if(hunger > 10) {
-				hunger = 10;	
+		
+		
+		
 	
+			
+
+			
+		
+
 				
-				System.out.println ("What do you want to do?");
-				System.out.println("Fed is 1, Play is 2, Sleep is 3, Go to the bathroom 4");
-				Object input;
-				int task = ((int) input).nextInt();
+		
 
-				while (task != 0) {
-					System.out.println("Pick between 1 and 5 ");
-					int duty = (int) .nextInt();
-				}
-
-				System.out.println("...great job");
-
-			}
-		}
-		}
-}
 		
 //		//{
 //		MAX_EAT = 10;
