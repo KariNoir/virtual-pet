@@ -1,13 +1,13 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class VirtualPet {
 
-	private String name;
+	//private String petName;
 	private int eat;
 	private int sleep;
 	private int fun;
 	private int potty;
-	private final int MAX_EAT, MAX_SLEEP, MAX_FUN, MAX_POTTY;
+	//private final int MAX_EAT, MAX_SLEEP, MAX_FUN, MAX_POTTY;
 	
 public VirtualPet(int eat, int sleep, int fun, int potty) {
 	this.eat = eat;
@@ -17,32 +17,52 @@ public VirtualPet(int eat, int sleep, int fun, int potty) {
 }
 
 public void tick() {
-	eat++;
-	sleep++;
-	fun++;
+	eat--;
+	sleep--;
+	fun--;
 	potty--;
 }
 
-public int getEat() {
+public int forEat() {
 	return eat;
 }
 
-public int getSleep() {
+public int forSleep() {
 	return sleep;
 }
 
-public int getFun() {
+public int forFun() {
 	return fun;
 }
 
-public int getPotty() {
+public int forPotty() {
 	return potty;
 }
 
-public 
-
+public void fedPet() {
+	this.eat += 3;
+	this.sleep += 1;
+	this.potty -= 4;
 }
 
+public void goPotty() {
+	this.eat -= 2;
+	this.fun += 2;
+	this.potty += 4;
+}
+
+
+public void haveFun() {
+	this.sleep -= 3;
+	this.eat -= 2;
+	this.fun += 4;
+			
+}
+public void getSleep() {
+	this.sleep += 2;
+	this.potty -=2;
+	this.eat += 2;
+}
 
 
 

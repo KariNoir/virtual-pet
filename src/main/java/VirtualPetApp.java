@@ -1,36 +1,58 @@
 import java.util.Scanner;
 
-public String getStatus() {
-		if(play <= 6) {
-			return "Let's play! ";
-		}
-		if(pot >=6) {
-			return "I got to go! ";
-		}
-		if(sleep >=6) {
-			return "Need Sleep! ";
-
-		}
-		if(hunger <=6) {
-			return "I need food!";
-		}
+public class VirtualPetApp {
+	
+//public String getStatus() {
+//		if(play <= 6) {
+//			return "Let's play! ";
+//		}
+//		if(pot >=6) {
+//			return "I got to go! ";
+//		}
+//		if(sleep >=6) {
+//			return "Need Sleep! ";
+//
+//		}
+//		if(hunger <=6) {
+//			return "I need food!";
+//		}
+//		
+//		// Virtual Pet 
+//		return null;
+//
+//	}
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 		
-		// Virtual Pet 
-		return null;
+		VirtualPet techPet = new VirtualPet(10, 10, 10, 10);
 
-	}
-		
-		public void eating() {
-			sleep += 2;
-			pot -= 4;
+//		public void eating() {
+//			sleep += 2;
+//			pot -= 4;
+//			
+//			hunger -= 5; //decrease hunger by 2
+//			if(hunger <0) { //if less than zero then it will be zero
+//				hunger = 0;
+//			}
+//			if(hunger > 10) {
+//				hunger = 10;
 			
-			hunger -= 5; //decrease hunger by 2
-			if(hunger <0) { //if less than zero then it will be zero
-				hunger = 0;
-			}
-			if(hunger > 10) {
-				hunger = 10;
-			}
+//	String decision = "";
+//	while (!decision.equalsIgnoreCase ("Yes")) {
+//		
+
+		System.out.println("Hi, name your pet");
+		Scanner petName = new Scanner(System.in);
+		petName = petName.nextLine();
+		System.out.println("petName " + techPet.forEat());
+		System.out.println("petName " + techPet.forFun());
+		System.out.println("petName " + techPet.forPotty());
+		System.out.println("petName " + techPet.forSleep());
+		
+		
+		
+		
+	}
 			
 		
 		}
@@ -95,6 +117,7 @@ public String getStatus() {
 			}
 		}
 		}
+}
 		
 //		//{
 //		MAX_EAT = 10;
