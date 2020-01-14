@@ -1,13 +1,6 @@
+import java.util.Scanner;
 
-public class VirtualPetApp {
-
-	private int hunger = 0;
-	private int sleep = 10;
-	private int play = 5;
-	private int pot = 0;
-	
-	
-	public String getStatus() {
+public String getStatus() {
 		if(play <= 6) {
 			return "Let's play! ";
 		}
@@ -103,6 +96,22 @@ public class VirtualPetApp {
 		}
 		}
 		
+//		//{
+//		MAX_EAT = 10;
+//		MAX_SLEEP = 10;
+//		MAX_FUN = 10;
+//		MAX_POTTY = 10;
+//		eat = 0;
+//		sleep = 0;
+//		fun = 0;
+//		potty = 0;
+//		System.out.println("Hi, name your pet");
+//		Scanner petName = new Scanner(System.in);
+//		name = petName.nextLine();
+//		
+//	}
+//		
+//	public Pet(String n)
 		
 
 
